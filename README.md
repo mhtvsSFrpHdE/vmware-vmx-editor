@@ -3,7 +3,10 @@ No more manually operation and common optimization.
 
 ## How to use
 
-The code is tested under python 3.9.10.  
+The code is tested under python 3.9.10.
+
+Copy your vmx file to `vmware-vmx-editor` folder (**important!**).
+
 Goto `Config\Setting.py`, check out comments and do modify as you wish.
 
 After save config, run:
