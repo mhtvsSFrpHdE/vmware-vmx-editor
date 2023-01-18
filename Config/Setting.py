@@ -33,6 +33,11 @@ targetList = {
     # 'uefi.secureBoot.enabled': '"FALSE"'
 }
 
+# Unset new added value by this tool, if a setting exist in default vmx at the beginning, don't remove it
+removeList = [
+    # "mainMem.useNamedFile"
+]
+
 # Try not to change order of these value
 # Because it seems each new vmx always have them on top
 fixedBeginningList = [

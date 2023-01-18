@@ -24,6 +24,8 @@ for value in vmxlines:
         continue
     if Core.is_virtualHW_version(value):
         continue
+    if Core.is_removeList(value, Setting.removeList):
+        continue
     if Core.is_targetList(value, Setting.targetList.keys()):
         continue
 # Delete managed line from exist vmx

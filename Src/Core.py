@@ -40,6 +40,14 @@ def is_targetList(input, targetListKeys):
     return False
 
 
+def is_removeList(input, removeListKeys):
+    for key in removeListKeys:
+        if key in input:
+            pendingRemove.append(input)
+            return True
+    return False
+
+
 def getFixedBeginningString():
     return "".join(fixedBeginning)
 
