@@ -18,18 +18,18 @@
 targetList = {
     # 'bios.bootDelay': '"0"',
     # 'cpuid.coresPerSocket': '"1"',
-    # 'ethernet0.virtualDev': '"e1000e"',
+    # 'ethernet0.virtualDev': '"vmxnet3"',
     # 'firmware': '"efi"',
     # 'hard-disk.hostBuffer': '"disabled"',
-    'mainMem.partialLazyRestore': '"FALSE"',
-    'mainMem.partialLazySave': '"FALSE"',
-    'mainMem.useNamedFile': '"FALSE"',
-    'MemTrimRate': '"0"',
-    'prefvmx.minVmMemPct': '"100"',
-    'prefvmx.useRecommendedLockedMemSize': '"TRUE"',
-    'priority.grabbed': '"high"',
-    'priority.ungrabbed': '"normal"',
-    'sched.mem.pshare.enable': '"FALSE"',
+    # 'mainMem.partialLazyRestore': '"FALSE"',
+    # 'mainMem.partialLazySave': '"FALSE"',
+    # 'mainMem.useNamedFile': '"FALSE"',
+    # 'MemTrimRate': '"0"',
+    # 'prefvmx.minVmMemPct': '"100"',
+    # 'prefvmx.useRecommendedLockedMemSize': '"TRUE"',
+    # 'priority.grabbed': '"high"',
+    # 'priority.ungrabbed': '"normal"',
+    # 'sched.mem.pshare.enable': '"FALSE"',
     # 'uefi.secureBoot.enabled': '"FALSE"'
 }
 
@@ -42,4 +42,4 @@ fixedBeginningList = [
 ]
 
 # For aesthetics, but may cause potential problems
-sortRest = True
+sortRest = False
