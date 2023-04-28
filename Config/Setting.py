@@ -18,9 +18,8 @@
 # ulm.disableMitigations = "TRUE", If Windows sandbox or WSL is enabled, this option may improve performance (Hyper-V). See https://communities.vmware.com/t5/VMware-Workstation-Player/Poor-performance-after-update-with-message-about-side-channel/td-p/2811429
 targetList = {
     # 'bios.bootDelay': '"0"',
-    # 'cpuid.coresPerSocket': '"1"',
+    # 'cpuid.coresPerSocket': '"4"',
     # 'ethernet0.virtualDev': '"vmxnet3"',
-    # 'firmware': '"efi"',
     # 'hard-disk.hostBuffer': '"disabled"',
     # 'mainMem.partialLazyRestore': '"FALSE"',
     # 'mainMem.partialLazySave': '"FALSE"',
@@ -31,13 +30,24 @@ targetList = {
     # 'priority.grabbed': '"high"',
     # 'priority.ungrabbed': '"normal"',
     # 'sched.mem.pshare.enable': '"FALSE"',
-    # 'uefi.secureBoot.enabled': '"FALSE"'
     # 'ulm.disableMitigations': '"TRUE"'
 }
 
 # Unset new added value by this tool, if a setting exist in default vmx at the beginning, don't remove it
 removeList = [
     # "mainMem.useNamedFile"
+    # "bios.bootDelay",
+    # "hard-disk.hostBuffer",
+    # "mainMem.partialLazyRestore",
+    # "mainMem.partialLazySave",
+    # "MemTrimRate",
+    # "prefvmx.minVmMemPct",
+    # "prefvmx.useRecommendedLockedMemSize",
+    # "priority.grabbed",
+    # "priority.ungrabbed",
+    # "sched.mem.pshare.enable",
+    # "uefi.secureBoot.enabled",
+    # "ulm.disableMitigations"
 ]
 
 # Try not to change order of these value
