@@ -15,6 +15,7 @@
 # priority.ungrabbed = "normal" , sets the priority for the VM in ungrabbed state
 # sched.mem.pshare.enable = "FALSE", by disabling memory sharing your guests will not share common memory blocks. Your VMware product will also stop comparing memory blocks
 # uefi.secureBoot.enabled = "FALSE", only effect if turn on efi boot. If true, certain old efi bootable ISO will not work like gparted
+# ulm.disableMitigations = "TRUE", If Windows sandbox or WSL is enabled, this option may improve performance (Hyper-V). See https://communities.vmware.com/t5/VMware-Workstation-Player/Poor-performance-after-update-with-message-about-side-channel/td-p/2811429
 targetList = {
     # 'bios.bootDelay': '"0"',
     # 'cpuid.coresPerSocket': '"1"',
@@ -31,6 +32,7 @@ targetList = {
     # 'priority.ungrabbed': '"normal"',
     # 'sched.mem.pshare.enable': '"FALSE"',
     # 'uefi.secureBoot.enabled': '"FALSE"'
+    # 'ulm.disableMitigations': '"TRUE"'
 }
 
 # Unset new added value by this tool, if a setting exist in default vmx at the beginning, don't remove it
